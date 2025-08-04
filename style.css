@@ -1,0 +1,94 @@
+ body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fef6f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1000px;
+        }
+        .left-side {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .main-topping {
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
+            margin-bottom: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .controls {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .controls img {
+            width: 40px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .controls img:hover {
+            transform: scale(1.1);
+        }
+        .right-side {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .topping-list {
+            display: grid;
+            grid-template-columns: repeat(3, 80px);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .topping {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            cursor: pointer;
+            background-color: white;
+            border-radius: 10px;
+            padding: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .topping:hover {
+            transform: scale(1.1);
+        }
+        #song-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        #caption {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            max-width: 300px;
+        }
+        
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .main-topping {
+                width: 250px;
+                height: 250px;
+            }
+        }

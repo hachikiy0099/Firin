@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Bread Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="left-side">
+            <img id="topping" src="justplate.png" class="main-topping" alt="topping">
+            <div class="controls">
+                <img id="prevBtn" src="Prev.png" alt="Prev Button">
+                <img id="playBtn" src="Play.png" alt="Play Button">
+                <img id="nextBtn" src="Next.png" alt="Next Button">
+            </div>
+            <p id="caption">Pilih Topping favoritmu untuk memutar musik!</p>
+        </div>
+
+        <div class="right-side">
+            <p id="song-title">Pilih Topping</p>
+            <div class="topping-list">
+                <img src="T1.png" class="topping" data-img="Kodok gosong.png" data-music="About You.mp3" data-title="About You">
+                <img src="T2.png" class="topping" data-img="Biasa.png" data-music="Seasons.mp3" data-title="Seasons">
+                <img src="T7.png" class="topping" data-img="mentega.png" data-music="Juna.mp3" data-title="Juna">
+                <img src="T4.png" class="topping" data-img="Tomat.png" data-music="Everybody Knew.mp3" data-title="Everybody Knew">
+                <img src="T5.png" class="topping" data-img="Jelly.png" data-music="Jellyous.mp3" data-title="Jellyous">
+                <img src="T6.png" class="topping" data-img="Telur.png" data-music="Nobody Get Lose.mp3" data-title="Nobody Get Lose">
+            </div>
+        </div>
+    </div>
+
+        <audio id="audioPlayer"></audio>
+
+    <!-- GANTI BARIS INI -->
+    <!-- <link rel="scriptsheet" href="script.js"> -->
+
+    <!-- DENGAN INI -->
+    <script src="script.js"></script>
+
+</body>
+</html>
